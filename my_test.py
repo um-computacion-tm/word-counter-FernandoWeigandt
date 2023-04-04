@@ -27,6 +27,11 @@ class TestWordCount(unittest.TestCase):
 
         self.assertEquals(resultado,{'hola': 4})
 
+    def test_5_word(self):
+
+        resultado=word_counter('hola soy carlos Y este Es mi test soy numero 465476')
+
+        self.assertEquals(resultado, {'hola': 1, 'soy': 2, 'carlos': 1, 'Y': 1, 'este': 1, 'Es': 1, 'mi': 1, 'test': 1, 'numero': 1, '465476': 1})
 
 if __name__ == '__main__':
     unittest.main()
