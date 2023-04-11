@@ -1,5 +1,3 @@
-# Imports
-
 import unittest
 from Word_counters import *
 
